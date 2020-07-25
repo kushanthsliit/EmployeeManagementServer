@@ -23,6 +23,7 @@ public class employeeServiceImpl implements employeeService {
 		employee.setName(emp.getName());
 		employee.setAddress(emp.getAddress());
 		employee.setSalary(emp.getSalary());
+		employee.setPhone(emp.getPhone());
 		
 		if(empRepo.findByName(emp.getName()) == null) {
 		empRepo.save(employee);
@@ -40,6 +41,7 @@ public class employeeServiceImpl implements employeeService {
 		em.setName(emp.getName());
 		em.setAddress(emp.getAddress());
 		em.setSalary(emp.getSalary());
+		em.setPhone(emp.getPhone());
 		
 		if(em != null)
 			empRepo.save(em);

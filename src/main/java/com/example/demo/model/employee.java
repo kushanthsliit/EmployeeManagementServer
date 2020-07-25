@@ -12,8 +12,16 @@ public class employee {
 	long empId;
 	String name;
 	String address;
+	long phone;
 	long salary;
 	
+	
+	public long getPhone() {
+		return phone;
+	}
+	public void setPhone(long phone) {
+		this.phone = phone;
+	}
 	public long getEmpId() {
 		return empId;
 	}
